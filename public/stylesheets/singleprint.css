@@ -1,0 +1,35 @@
+@media single-print{
+    head title,
+    .top-title,
+    .item1,
+    .pagination
+    {
+        display: none;
+    }
+
+    body{
+    padding: 0;
+    margin: 0;
+}
+    .main{
+    width: 535px;
+    margin: 0 auto;
+    height: 780px;
+}
+
+    table{
+    width: 534px;
+    margin: 0 auto;
+    height:778px;
+    /* transform: rotateX(180deg); */
+    }
+    table> tbody> tr#display_image:nth-last-child(1){
+        width:534px;
+        height: 780px;
+        background-position:center;
+        background-size: cover;
+        
+    }
+
+
+}

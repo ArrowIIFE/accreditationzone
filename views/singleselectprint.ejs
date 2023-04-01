@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACCREDITATION ZONE</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link rel="stylesheet" href="../stylesheets/single-loopprint.css" />
+        <link rel="stylesheet" href="../stylesheets/selectsingleprint.css" />
+        <link rel="stylesheet" href="../stylesheets/dropwonbackground.css"/>
+    </head>
+    <body>
+        <div class="main" id="select-main">
+            <div class="top-title" id="select-title-print">
+                <div><a style="padding-right:5px" href="/"><i class="fas fa-home"></i></a>
+                    
+                    <a style="padding-left:5px; text-decoration:none " href="/add-user"><i class="fas fa-angle-double-left"></i> All Users</a>
+                    <a href="/acro" style="text-decoration: none;" class="border-shadow">
+                        <span class="text-gradient">New User <i class="fas fa-user"></i></span>
+                    </a>
+                </div>
+                <div><h1>Printing Document</h1></div>
+                <div class="print-iteam dropdown">
+                    <button class="dropbtn">Background</button>
+                        <div class="dropdown-content">
+                            <a href="#">All Page Print:<input type="file" id="image_input" accept="image/png, image/jpg, image/jpeg" /></a>
+                            <a href="#" >Single Page Print: <input type="file" id="single_input_back" accept="image/png, image/jpg, image/jpeg" /></a>
+                            <a href="#">Signature:<input type="file" id="image_signature_select" accept="image/png, image/jpg, image/jpeg" /></a>        
+                        </div> 
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Print</button>
+                        <div class="dropdown-content">
+                            <a href="#"><button id="print-button" class="btn"><i class="fa fa-print"></i>Full-Print</button></a>
+                            <a href="#" ><button id="select-print-single" class="single-print btn"><i class="fa fa-print"></i>single print</button></a>
+                        </div>
+                </div>
+            </div>
+            <table id="select-table">
+                <tbody>
+                    <tr class="velue-tr grid-container" id="display_image_back">
+                        <td class="item1"></td>
+                        <td class="item2"><p><%= data.formno %></p></td>
+                        <td  class="item3"></td>
+                        <td class="item5"><p><%= data.vanue %></p></td>
+                        <td class="item17" style="width: 100px;"></td>
+                        <td  class="item6"><p><%= data.fullname %></p></td>
+                        <td class="item7"><p><%= data.designation %></p></td>
+                        <td class="item16"><p><%= data.organization %></p></td>
+                        <td class="item8"><p><%= data.zoneone %></p></td>
+                        <td class="item9"><p><%= data.zonetwo %></p></td>
+                        <td class="item10"><p><%= data.zonethree %></p></td>
+                        <td class="item11"><p><%= data.zonefour %></p></td>
+                        <td  class="item12"><p><%= data.zonefive %></p></td>
+                        <td class="item13"><p><%= data.zonesix %></p></td>
+                        <td class="item14"></td>
+                        <td class="item15"><p><%= data.cardfooter %></p></td>
+                        <td class="item18"></td>
+                        <td class="item19"></td>   
+                        <td class="item20"></td>
+                        <td class="item21"></td> 
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+        <script src="../js/singleSelectPrint.js"></script>
+        <script src="../js/selectprintbackgroung.js"></script>
+        <script src="../js/selectSignature.js"></script>
+    </body>
+</html>
